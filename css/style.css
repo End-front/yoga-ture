@@ -788,6 +788,7 @@ a {
   border-radius: 50%;
   background-color: #000;
   margin-right: 40px;
+  border: 1px solid transparent;
 }
 
 .block-6 .block__table ul {
