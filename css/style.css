@@ -642,6 +642,7 @@ a {
   height: 100vw;
   max-width: 170px;
   max-height: 170px;
+  flex-shrink: 0;
   border-radius: 50%;
   display: -webkit-flex;
   display: -moz-flex;
