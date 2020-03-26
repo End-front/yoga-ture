@@ -7,15 +7,9 @@ ibg();
 $(document).ready(function() {
             $('.owl-carousel').owlCarousel({
             	items: 1,
-            	dotsEach: true,
             	loop: true,
+                autoplay: true,
+                autoplayTimeout: 8000,
+                autoplaySpeed: 800,
             });
-            $('.header__menu__burger').click(function(event) {
-            	$('.header__menu__burger').toggleClass('active');
-            	$('.header__menu__right').toggleClass('active');
-            });
-        });
-
-$(function(){
-            $('input[placeholder], textarea[placeholder]').placeholder();
         });
