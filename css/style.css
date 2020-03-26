@@ -415,9 +415,9 @@ a {
   -ms-flex-align: stretch;
   align-items: stretch;
   margin: 20px 15px;
-  -webkit-transition: min-height 0.8s, margin 0.8s, height 0.8s;
-  -o-transition: min-height 0.8s, margin 0.8s, height 0.8s;
-  transition: min-height 0.8s, margin 0.8s, height 0.8s;
+  -webkit-transition: min-height 0.2s, margin 0.2s, height 0.2s;
+  -o-transition: min-height 0.2s, margin 0.2s, height 0.2s;
+  transition: min-height 0.2s, margin 0.2s, height 0.2s;
 }
 
 .block__card img {
