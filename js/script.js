@@ -33,12 +33,21 @@ $(document).ready(function() {
 		nav: false,
 	});
 	$.fn.equivalent = function (){
-	        var $blocks = $(this),
-	            maxH    = $blocks.eq(0).height();
-	        $blocks.each(function(){
-	            maxH = ( $(this).height() > maxH ) ? $(this).height() : maxH;
-	        });
-	        $blocks.height(maxH);
-	    }
-	    $('#equivalent .block__carousel__item__line').equivalent();             
+		var $blocks = $(this),
+		maxH    = $blocks.eq(0).height();
+		$blocks.each(function(){
+			maxH = ( $(this).height() > maxH ) ? $(this).height() : maxH;
+		});
+		$blocks.height(maxH);
+	}
+	$('#equivalent .block__carousel__item__line').equivalent(); 
+	$('.owl-carousel-2').owlCarousel({
+		items: 1,
+		loop: true,
+		autoplay: true,
+		autoplayTimeout: 10000,
+		autoplaySpeed: 800,
+		autoplayHoverPause: true,
+		nav: true,
+	});	
 });
