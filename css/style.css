@@ -1428,10 +1428,6 @@ a {
   }
 }
 
-.block-9 {
-  padding-bottom: 0;
-}
-
 .block-9__img {
   margin-bottom: 30px;
 }
@@ -1475,6 +1471,106 @@ a {
   font-size: 1.125rem;
   text-align: center;
   font-style: italic;
+}
+
+.block-10__grid {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+
+.block-10__grid__item {
+  width: 16.66667%;
+  text-align: center;
+  font-size: 14px;
+  padding: 6px;
+}
+
+.block-10__grid__item__link {
+  color: #fd8329;
+}
+
+.block-10__grid__item__link:hover {
+  text-decoration: none;
+}
+
+.block-10__grid__item__icon {
+  position: relative;
+}
+
+.block-10__grid__item__icon:after {
+  content: '';
+  background-image: url(../img/right-arrow.svg);
+  width: 25px;
+  height: 17px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-right: -6px;
+  -webkit-transform: translate(50%, -50%);
+  -ms-transform: translate(50%, -50%);
+  transform: translate(50%, -50%);
+}
+
+.block-10__grid__item:last-child .block-10__grid__item__icon:after {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .block-10 {
+    padding-bottom: 50px;
+  }
+  .block-10 .block-10__grid__item {
+    width: 33%;
+    margin-bottom: 30px;
+  }
+  .block-10 .block-10__grid__item:nth-child(3) .block-10__grid__item__icon:after {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .block-10 .block-10__grid__item {
+    width: 50%;
+  }
+  .block-10 .block-10__grid__item:nth-child(even) .block-10__grid__item__icon:after {
+    display: none;
+  }
+  .block-10 .block-10__grid__item:nth-child(3) .block-10__grid__item__icon:after {
+    display: block;
+  }
+}
+
+@media (max-width: 400px) {
+  .block-10 .block-10__grid__item {
+    margin-bottom: 50px;
+    width: 100%;
+  }
+  .block-10 .block-10__grid__item:nth-child(1) .block-10__grid__item__icon:after {
+    display: none;
+  }
+  .block-10 .block-10__grid__item:nth-child(even) .block-10__grid__item__icon:after {
+    display: block;
+  }
+  .block-10 .block-10__grid__item__icon:after {
+    margin-right: -6px;
+    margin-top: -25px;
+    -webkit-transform: rotate(90deg) translate(-50%, -50%);
+    -ms-transform: rotate(90deg) translate(-50%, -50%);
+    transform: rotate(90deg) translate(-50%, -50%);
+    top: 0;
+    right: 50%;
+  }
 }
 
 .block-11 .block__costs {
@@ -1852,6 +1948,10 @@ footer .container {
   font-size: 18px;
   font-weight: bold;
   margin-top: 12px;
+}
+
+.footer__link:hover {
+  text-decoration: none;
 }
 
 .footer__right {
