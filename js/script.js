@@ -49,5 +49,23 @@ $(document).ready(function() {
 		autoplaySpeed: 800,
 		autoplayHoverPause: true,
 		nav: true,
-	});	
+	});
+	$('.pop_up').click(function() {
+		$('.overlay_popup, #popup1').show();
+	});
+	$('.overlay_popup').click(function() { // Обрабатываем клик по заднему фону
+    $('.overlay_popup, .popup').hide(); // Скрываем затемнённый задний фон и основное всплывающее окно
+	});
+	$('.block-12 .item-1').click(function() {
+		$('.overlay_popup, #popup2').show();
+	});
+	$('.block-12 .item-2').click(function() {
+		$('.overlay_popup, #popup3').show();
+	});
+	$('.block-12 .item-3').click(function() {
+		$('.overlay_popup, #popup4').show();
+	});
+	$('.block-12 .item-4').click(function() {
+		$('.overlay_popup, #popup5').show();
+	});		
 });
