@@ -18,7 +18,7 @@ $(document).ready(function() {
 	$('.owl-carousel').owlCarousel({
 		items: 1,
 		loop: true,
-		autoplay: true,
+		autoplay: false,
 		autoplayTimeout: 8000,
 		autoplaySpeed: 800,
 		autoplayHoverPause: true,
@@ -26,7 +26,7 @@ $(document).ready(function() {
 	$('.owl-carousel-1').owlCarousel({
 		items: 1,
 		loop: true,
-		autoplay: true,
+		autoplay: false,
 		autoplayTimeout: 10000,
 		autoplaySpeed: 800,
 		autoplayHoverPause: true,
@@ -44,7 +44,7 @@ $(document).ready(function() {
 	$('.owl-carousel-2').owlCarousel({
 		items: 1,
 		loop: true,
-		autoplay: true,
+		autoplay: false,
 		autoplayTimeout: 10000,
 		autoplaySpeed: 800,
 		autoplayHoverPause: true,
